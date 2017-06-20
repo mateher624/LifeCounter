@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{1AEBD360-C54D-4BEC-AEAF-4ED4CFB4B354}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LifeCounter</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>LifeCounter</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer: mateusz@herjan.pl (B62K47MSAE)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>b6471a90-0b9f-47d1-a446-7df2a77f8d13</CodesignProvision>
+    <OptimizePNGs>false</OptimizePNGs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Mode.cs" />
+    <Compile Include="Life.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist" />
+    <Compile Include="MainMenuController.cs" />
+    <Compile Include="MainMenuController.designer.cs">
+      <DependentUpon>MainMenuController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavigationController.cs" />
+    <Compile Include="NavigationController.designer.cs">
+      <DependentUpon>NavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerSettingsViewController.cs" />
+    <Compile Include="PlayerSettingsViewController.designer.cs">
+      <DependentUpon>PlayerSettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayersSettingsTableSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Fonts\beleren-bold.ttf" />
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Style.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController.cs" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Assets\button_bg.png" />
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\Assets\button_bg_inactive.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_black.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_blue.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_green.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_pink.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_red.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_violet.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_white.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_yellow.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_black.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_blank.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_green.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_red.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_violet.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_white.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_white2.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_yellow.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_blue.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_pink.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_gray.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_white2.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_trans.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_black_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_blue_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_gray_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_green_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_pink_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_red_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_violet_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_white_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_yellow_2x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_black_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_blue_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_gray_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_green_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_pink_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_red_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_violet_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_white_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_yellow_3x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_island_2x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_island_3x2.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_island.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_island.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_bolas_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_forest_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_mountain_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_plains_2x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_swamp_2x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_bolas_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_forest_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_mountain_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_plains_3x2.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_swamp_3x2.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_bolas.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_forest.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_mountain.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_plains.png" />
+    <BundleResource Include="Resources\Assets\Bars\bar_swamp.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_forest.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_mountain.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_plains.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_swamp.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_bolas.png" />
+    <BundleResource Include="Resources\Assets\3x2\bg_white2_3x2.png" />
+    <BundleResource Include="Resources\Assets\2x2\bg_white2_2x2.png" />
+    <BundleResource Include="Resources\Assets\button_bg_2x2.png" />
+    <BundleResource Include="Resources\Assets\button_bg_3x2.png" />
+    <BundleResource Include="Resources\Assets\button_bg_10x2.png" />
+    <BundleResource Include="Resources\Assets\button_bg_inactive_2x2.png" />
+    <BundleResource Include="Resources\Assets\button_bg_inactive_3x2.png" />
+    <BundleResource Include="Resources\Assets\button_bg_inactive_10x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-iPadPro.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Small@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Spotlight-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Spotlight-40@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-Spotlight-40@3x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default-568h@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Default@2x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

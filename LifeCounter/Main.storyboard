@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="67">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController" automaticallyAdjustsScrollViewInsets="NO">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="795" translatesAutoresizingMaskIntoConstraints="NO" sectionIndexMinimumDisplayRowCount="5" fixedFrame="YES" allowsSelectionDuringEditing="YES" indicatorStyle="black" directionalLockEnabled="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bounces="NO">
+                                <rect key="frame" x="0.0" y="183" width="320" height="385"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1251" style="IBUITableViewCellStyleDefault" textLabel="1253" accessoryType="disclosureIndicator" reuseIdentifier="TableCellx" imageView="1525" shouldIndentWhileEditing="NO">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1251" id="1252">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1253">
+                                                    <rect key="frame" x="73" y="0.0" width="212" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="indicator_gray.png" id="1525" clearsContextBeforeDrawing="NO">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" image="Assets/Indocators/indicator_white2.png"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="1523" destination="1395" kind="show"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1651" reuseIdentifier="TableCell" accessoryType="disclosureIndicator">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1651" id="1652">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <variation key="heightClass=regular-widthClass=compact"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="1787" destination="1395" kind="show"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <inset key="separatorInset" minX="15" minY="0" maxX="0" maxY="0"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1605" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="378" y="160" width="189" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1604" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="189" y="160" width="189" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1603" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="160" width="189" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1602" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="378" y="0.0" width="189" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1601" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="189" y="0.0" width="189" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1600" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="189" height="160"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="21" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="378" y="160" width="95" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P6dec_TouchUpInside:" destination="BYZ-38-t0r" id="41" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="19" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="189" y="160" width="95" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P5dec_TouchUpInside:" destination="BYZ-38-t0r" id="39" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="18" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="160" width="95" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P4dec_TouchUpInside:" destination="BYZ-38-t0r" id="36" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="15" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="378" y="0.0" width="95" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P3inc_TouchUpInside:" destination="BYZ-38-t0r" id="34" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="189" y="0.0" width="95" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P2inc_TouchUpInside:" destination="BYZ-38-t0r" id="32" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="11" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="95" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <size key="titleShadowOffset" width="0" height="0"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P1inc_TouchUpInside:" destination="BYZ-38-t0r" id="30" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="284" y="0.0" width="94" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P2dec_TouchUpInside:" destination="BYZ-38-t0r" id="33" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="12" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="95" y="0.0" width="94" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P1dec_TouchUpInside:" destination="BYZ-38-t0r" id="31" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="473" y="0.0" width="94" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P3dec_TouchUpInside:" destination="BYZ-38-t0r" id="35" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="17" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="96" y="160" width="94" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P4inc_TouchUpInside:" destination="BYZ-38-t0r" id="37" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="20" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="284" y="160" width="94" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P5inc_TouchUpInside:" destination="BYZ-38-t0r" id="38" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="22" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="473" y="160" width="94" height="160"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="0.25098039215686274"/>
+                                </state>
+                                <connections>
+                                    <action selector="P6inc_TouchUpInside:" destination="BYZ-38-t0r" id="40" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="35" y="50" width="120" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65" weight="semibold"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="24" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="222" y="50" width="120" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65" weight="semibold"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="25" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="411" y="50" width="120" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65" weight="semibold"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="26" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="35" y="210" width="120" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65" weight="semibold"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="222" y="210" width="120" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65" weight="semibold"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="28" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="411" y="210" width="120" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65" weight="semibold"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please rorate the device in order to show Life Counters." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="744" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="5" fixedFrame="YES" key="tableHeaderView">
+                                <rect key="frame" x="30" y="74" width="262" height="130"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3"/>
+                                <exclude reference="11"/>
+                                <exclude reference="12"/>
+                                <exclude reference="14"/>
+                                <exclude reference="15"/>
+                                <exclude reference="16"/>
+                                <exclude reference="17"/>
+                                <exclude reference="18"/>
+                                <exclude reference="19"/>
+                                <exclude reference="20"/>
+                                <exclude reference="21"/>
+                                <exclude reference="22"/>
+                                <exclude reference="23"/>
+                                <exclude reference="24"/>
+                                <exclude reference="25"/>
+                                <exclude reference="26"/>
+                                <exclude reference="27"/>
+                                <exclude reference="28"/>
+                                <exclude reference="1600"/>
+                                <exclude reference="1601"/>
+                                <exclude reference="1602"/>
+                                <exclude reference="1603"/>
+                                <exclude reference="1604"/>
+                                <exclude reference="1605"/>
+                                <exclude reference="795"/>
+                                <exclude reference="744"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3"/>
+                                <include reference="11"/>
+                                <include reference="12"/>
+                                <include reference="14"/>
+                                <include reference="15"/>
+                                <include reference="16"/>
+                                <include reference="17"/>
+                                <include reference="18"/>
+                                <include reference="19"/>
+                                <include reference="20"/>
+                                <include reference="21"/>
+                                <include reference="22"/>
+                                <include reference="23"/>
+                                <include reference="24"/>
+                                <include reference="25"/>
+                                <include reference="26"/>
+                                <include reference="27"/>
+                                <include reference="28"/>
+                                <include reference="1600"/>
+                                <include reference="1601"/>
+                                <include reference="1602"/>
+                                <include reference="1603"/>
+                                <include reference="1604"/>
+                                <include reference="1605"/>
+                            </mask>
+                            <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                        </variation>
+                        <accessibility key="accessibilityConfiguration" label="Life Counter"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="795"/>
+                                <include reference="744"/>
+                            </mask>
+                        </variation>
+                        <connections/>
+                    </view>
+                    <connections>
+                        <outlet property="p1inc" destination="11" id="name-outlet-11"/>
+                        <outlet property="p1dec" destination="12" id="name-outlet-12"/>
+                        <outlet property="p2inc" destination="3" id="name-outlet-3"/>
+                        <outlet property="p3inc" destination="15" id="name-outlet-15"/>
+                        <outlet property="p6inc" destination="22" id="name-outlet-22"/>
+                        <outlet property="p5inc" destination="20" id="name-outlet-20"/>
+                        <outlet property="p4inc" destination="17" id="name-outlet-17"/>
+                        <outlet property="p2dec" destination="14" id="name-outlet-14"/>
+                        <outlet property="p3dec" destination="16" id="name-outlet-16"/>
+                        <outlet property="p4dec" destination="18" id="name-outlet-18"/>
+                        <outlet property="p5dec" destination="19" id="name-outlet-19"/>
+                        <outlet property="p6dec" destination="21" id="name-outlet-21"/>
+                        <outlet property="p1label" destination="23" id="name-outlet-23"/>
+                        <outlet property="p2label" destination="24" id="name-outlet-24"/>
+                        <outlet property="p3label" destination="25" id="name-outlet-25"/>
+                        <outlet property="p4label" destination="26" id="name-outlet-26"/>
+                        <outlet property="p5label" destination="27" id="name-outlet-27"/>
+                        <outlet property="p6label" destination="28" id="name-outlet-28"/>
+                        <outlet property="PlayerSettingsTable" destination="795" id="name-outlet-795"/>
+                        <outlet property="p1image" destination="1600" id="name-outlet-1600"/>
+                        <outlet property="p2image" destination="1601" id="name-outlet-1601"/>
+                        <outlet property="p3image" destination="1602" id="name-outlet-1602"/>
+                        <outlet property="p4image" destination="1603" id="name-outlet-1603"/>
+                        <outlet property="p5image" destination="1604" id="name-outlet-1604"/>
+                        <outlet property="p6image" destination="1605" id="name-outlet-1605"/>
+                        <outlet property="RotationInfo" destination="744" id="name-outlet-744"/>
+                    </connections>
+                    <navigationItem title="Life Counter" id="289" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="82"/>
+        </scene>
+        <scene sceneID="66">
+            <objects>
+                <navigationController id="67" sceneMemberID="viewController" customClass="NavigationController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="69">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="369" destination="295" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-541" y="84"/>
+        </scene>
+        <scene sceneID="294">
+            <objects>
+                <viewController id="295" sceneMemberID="viewController" customClass="MainMenuController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="292"/>
+                        <viewControllerLayoutGuide type="bottom" id="293"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="296">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="371" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="504" width="277" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="552" destination="BYZ-38-t0r" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="556" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="492" y="274" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="625" destination="BYZ-38-t0r" kind="show"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NUMBER OF PLAYERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="745" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="16" y="80" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941179" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="754" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="79" y="109" width="49" height="42"/>
+                                <state key="normal" title="2" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPlayers2_TouchUpInside:" destination="295" id="770" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="755" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="136" y="109" width="49" height="42"/>
+                                <state key="normal" title="3" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPlayers3_TouchUpInside:" destination="295" id="771" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="756" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="193" y="109" width="49" height="42"/>
+                                <state key="normal" title="4" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPlayers4_TouchUpInside:" destination="295" id="772" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="757" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="250" y="109" width="49" height="42"/>
+                                <state key="normal" title="6" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPlayers6_TouchUpInside:" destination="295" id="773" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="758" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="159" width="277" height="42"/>
+                                <size key="titleShadowOffset" width="0" height="0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Archenemy 1 vs 3" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleShadowColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPlayersA_TouchUpInside:" destination="295" id="774" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="759" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="STARTING LIFE">
+                                <rect key="frame" x="16" y="232" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941179" alpha="1"/>
+                            </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="775" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="261" width="63" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="20" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="777" id="776" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="295" id="787" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="778" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="93" y="261" width="63" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="30" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="780" id="779" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife30_TouchUpInside:" destination="295" id="788" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="781" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="164" y="261" width="63" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="40" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="783" id="782" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife40_TouchUpInside:" destination="295" id="789" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="784" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="235" y="261" width="63" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="..." backgroundImage="button_bg_inactive.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="786" id="785" eventType="touchUpInside"/>
+                                    <action selector="ButtonLifeCustom_TouchUpInside:" destination="295" id="790" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1855" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="109" width="49" height="42"/>
+                                <state key="normal" title="1" backgroundImage="button_bg_inactive.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPlayers2_TouchUpInside:" destination="1857" id="1856" eventType="touchUpInside"/>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="295" id="1858" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="371"/>
+                                <exclude reference="556"/>
+                                <exclude reference="745"/>
+                                <exclude reference="754"/>
+                                <exclude reference="755"/>
+                                <exclude reference="756"/>
+                                <exclude reference="757"/>
+                                <exclude reference="758"/>
+                                <exclude reference="759"/>
+                                <exclude reference="775"/>
+                                <exclude reference="778"/>
+                                <exclude reference="781"/>
+                                <exclude reference="784"/>
+                                <exclude reference="1855"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="371"/>
+                                <include reference="745"/>
+                                <include reference="754"/>
+                                <include reference="755"/>
+                                <include reference="756"/>
+                                <include reference="757"/>
+                                <include reference="758"/>
+                                <include reference="759"/>
+                                <include reference="775"/>
+                                <include reference="778"/>
+                                <include reference="781"/>
+                                <include reference="784"/>
+                                <include reference="1855"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="556"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem title="Setup" id="368" key="navigationItem"/>
+                    <connections>
+                        <outlet property="ButtonPlayers2" destination="754" id="name-outlet-754"/>
+                        <outlet property="ButtonPlayers3" destination="755" id="name-outlet-755"/>
+                        <outlet property="ButtonPlayers4" destination="756" id="name-outlet-756"/>
+                        <outlet property="ButtonPlayers6" destination="757" id="name-outlet-757"/>
+                        <outlet property="ButtonPlayersA" destination="758" id="name-outlet-758"/>
+                        <outlet property="ButtonLife20" destination="775" id="name-outlet-775"/>
+                        <outlet property="ButtonLife30" destination="778" id="name-outlet-778"/>
+                        <outlet property="ButtonLife40" destination="781" id="name-outlet-781"/>
+                        <outlet property="ButtonLifeCustom" destination="784" id="name-outlet-784"/>
+                        <outlet property="ButtonPlayers1" destination="1855" id="name-outlet-1855"/>
+                    </connections>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="297" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="555"/>
+        </scene>
+        <scene sceneID="1394">
+            <objects>
+                <viewController id="1395" sceneMemberID="viewController" customClass="PlayerSettingsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1392"/>
+                        <viewControllerLayoutGuide type="bottom" id="1393"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1396">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BACKGROUND COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1526" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="16" y="80" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.42745098039215684" green="0.42745098039215684" blue="0.44705882352941179" alpha="1"/>
+                            </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1527" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="109" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_black.png">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1529" id="1528" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1531" id="1530" eventType="touchUpInside"/>
+                                    <action selector="BlackButton_TouchUpInside:" destination="1395" id="1580" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1532" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="93" y="109" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_blue.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1534" id="1533" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1536" id="1535" eventType="touchUpInside"/>
+                                    <action selector="BlueButton_TouchUpInside:" destination="1395" id="1587" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1537" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="164" y="109" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_green.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1539" id="1538" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1541" id="1540" eventType="touchUpInside"/>
+                                    <action selector="GreenButton_TouchUpInside:" destination="1395" id="1588" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1542" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="235" y="109" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_red.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1544" id="1543" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1546" id="1545" eventType="touchUpInside"/>
+                                    <action selector="RedButton_TouchUpInside:" destination="1395" id="1589" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1547" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="180" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_white.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1549" id="1548" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1551" id="1550" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1395" id="1590" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1552" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="93" y="180" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_violet.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1554" id="1553" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1556" id="1555" eventType="touchUpInside"/>
+                                    <action selector="VioletButton_TouchUpInside:" destination="1395" id="1591" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1557" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="235" y="180" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_pink.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1559" id="1558" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1561" id="1560" eventType="touchUpInside"/>
+                                    <action selector="PinkButton_TouchUpInside:" destination="1395" id="1593" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1562" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="164" y="180" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_yellow.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1564" id="1563" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1566" id="1565" eventType="touchUpInside"/>
+                                    <action selector="YellowButton_TouchUpInside:" destination="1395" id="1592" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1608" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="251" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1610" id="1609" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1612" id="1611" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1614" id="1613" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1395" id="1616" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1641" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="93" y="252" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1643" id="1642" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1645" id="1644" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1647" id="1646" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1649" id="1648" eventType="touchUpInside"/>
+                                    <action selector="IslandButton_TouchUpInside:" destination="1395" id="1650" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1789" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="164" y="252" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1791" id="1790" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1793" id="1792" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1795" id="1794" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1797" id="1796" eventType="touchUpInside"/>
+                                    <action selector="IslandButton_TouchUpInside:" destination="1799" id="1798" eventType="touchUpInside"/>
+                                    <action selector="SwampButton_TouchUpInside:" destination="1395" id="1844" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1800" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="235" y="252" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1802" id="1801" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1804" id="1803" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1806" id="1805" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1808" id="1807" eventType="touchUpInside"/>
+                                    <action selector="IslandButton_TouchUpInside:" destination="1810" id="1809" eventType="touchUpInside"/>
+                                    <action selector="MountainButton_TouchUpInside:" destination="1395" id="1845" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1811" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="22" y="322" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1813" id="1812" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1815" id="1814" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1817" id="1816" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1819" id="1818" eventType="touchUpInside"/>
+                                    <action selector="IslandButton_TouchUpInside:" destination="1821" id="1820" eventType="touchUpInside"/>
+                                    <action selector="PlainsButton_TouchUpInside:" destination="1395" id="1846" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1822" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="93" y="322" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1824" id="1823" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1826" id="1825" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1828" id="1827" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1830" id="1829" eventType="touchUpInside"/>
+                                    <action selector="IslandButton_TouchUpInside:" destination="1832" id="1831" eventType="touchUpInside"/>
+                                    <action selector="ForestButton_TouchUpInside:" destination="1395" id="1847" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1833" translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" fixedFrame="YES">
+                                <rect key="frame" x="164" y="322" width="63" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bar_trans.png">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                                </state>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <connections>
+                                    <action selector="ButtonPlayers1_TouchUpInside:" destination="1835" id="1834" eventType="touchUpInside"/>
+                                    <action selector="ButtonLife20_TouchUpInside:" destination="1837" id="1836" eventType="touchUpInside"/>
+                                    <action selector="WhiteButton_TouchUpInside:" destination="1839" id="1838" eventType="touchUpInside"/>
+                                    <action selector="TransButton_TouchUpInside:" destination="1841" id="1840" eventType="touchUpInside"/>
+                                    <action selector="IslandButton_TouchUpInside:" destination="1843" id="1842" eventType="touchUpInside"/>
+                                    <action selector="BolasButton_TouchUpInside:" destination="1395" id="1848" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1526"/>
+                                <exclude reference="1527"/>
+                                <exclude reference="1532"/>
+                                <exclude reference="1537"/>
+                                <exclude reference="1542"/>
+                                <exclude reference="1547"/>
+                                <exclude reference="1552"/>
+                                <exclude reference="1557"/>
+                                <exclude reference="1562"/>
+                                <exclude reference="1608"/>
+                                <exclude reference="1641"/>
+                                <exclude reference="1789"/>
+                                <exclude reference="1800"/>
+                                <exclude reference="1811"/>
+                                <exclude reference="1822"/>
+                                <exclude reference="1833"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1526"/>
+                                <include reference="1527"/>
+                                <include reference="1532"/>
+                                <include reference="1537"/>
+                                <include reference="1542"/>
+                                <include reference="1547"/>
+                                <include reference="1552"/>
+                                <include reference="1557"/>
+                                <include reference="1562"/>
+                                <include reference="1608"/>
+                                <include reference="1641"/>
+                                <include reference="1789"/>
+                                <include reference="1800"/>
+                                <include reference="1811"/>
+                                <include reference="1822"/>
+                                <include reference="1833"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="BlackButton" destination="1527" id="name-outlet-1527"/>
+                        <outlet property="BlueButton" destination="1532" id="name-outlet-1532"/>
+                        <outlet property="GreenButton" destination="1537" id="name-outlet-1537"/>
+                        <outlet property="RedButton" destination="1542" id="name-outlet-1542"/>
+                        <outlet property="WhiteButton" destination="1547" id="name-outlet-1547"/>
+                        <outlet property="VioletButton" destination="1552" id="name-outlet-1552"/>
+                        <outlet property="YellowButton" destination="1562" id="name-outlet-1562"/>
+                        <outlet property="PinkButton" destination="1557" id="name-outlet-1557"/>
+                        <outlet property="TransButton" destination="1608" id="name-outlet-1608"/>
+                        <outlet property="IslandButton" destination="1641" id="name-outlet-1641"/>
+                        <outlet property="SwampButton" destination="1789" id="name-outlet-1789"/>
+                        <outlet property="MountainButton" destination="1800" id="name-outlet-1800"/>
+                        <outlet property="PlainsButton" destination="1811" id="name-outlet-1811"/>
+                        <outlet property="ForestButton" destination="1822" id="name-outlet-1822"/>
+                        <outlet property="BolasButton" destination="1833" id="name-outlet-1833"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1397" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="83"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedOrientationMetrics key="orientation"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="bar_trans.png" width="160" height="160"/>
+        <image name="Assets/bg_black_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_blue_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_green_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_pink_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_red_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_violet_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_white_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_white2_ip5s.png" width="378" height="320"/>
+        <image name="Assets/bg_yellow_ip5s.png" width="378" height="320"/>
+        <image name="Assets/Bars/bar_black.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_blank.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_blue.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_green.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_pink.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_red.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_trans.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_violet.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_white.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_white2.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_yellow.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_black.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_blue.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_gray.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_green.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_pink.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_red.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_violet.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_white.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_white2.png" width="160" height="160"/>
+        <image name="Assets/Indocators/indicator_yellow.png" width="160" height="160"/>
+        <image name="Assets/2x2/bg_black_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_blue_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_gray_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_green_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_pink_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_red_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_violet_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_white_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_white2_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_yellow_2x2.png" width="378" height="320"/>
+        <image name="Assets/3x2/bg_black_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_blue_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_gray_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_green_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_pink_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_red_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_violet_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_white_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_white2_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_yellow_3x2.png" width="567" height="320"/>
+        <image name="Assets/button_bg.png" width="189" height="160"/>
+        <image name="Assets/button_bg_inactive.png" width="189" height="160"/>
+        <image name="Assets/Indicators/indicator_black.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_blue.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_gray.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_green.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_pink.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_red.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_violet.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_white.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_white2.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_yellow.png" width="160" height="160"/>
+        <image name="Assets/2x2/bg_island_2x2.png" width="378" height="320"/>
+        <image name="Assets/3x2/bg_island_3x2.png" width="567" height="320"/>
+        <image name="Assets/Bars/bar_island.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_island.png" width="160" height="160"/>
+        <image name="Assets/2x2/bg_bolas_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_forest_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_mountain_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_plains_2x2.png" width="378" height="320"/>
+        <image name="Assets/2x2/bg_swamp_2x2.png" width="378" height="320"/>
+        <image name="Assets/3x2/bg_bolas_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_forest_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_mountain_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_plains_3x2.png" width="567" height="320"/>
+        <image name="Assets/3x2/bg_swamp_3x2.png" width="567" height="320"/>
+        <image name="Assets/Bars/bar_bolas.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_forest.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_mountain.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_plains.png" width="160" height="160"/>
+        <image name="Assets/Bars/bar_swamp.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_bolas.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_forest.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_mountain.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_plains.png" width="160" height="160"/>
+        <image name="Assets/Indicators/indicator_swamp.png" width="160" height="160"/>
+        <image name="Assets/button_bg_10x2.png" width="831" height="126"/>
+        <image name="Assets/button_bg_2x2.png" width="147" height="126"/>
+        <image name="Assets/button_bg_3x2.png" width="189" height="126"/>
+        <image name="Assets/button_bg_inactive_10x2.png" width="831" height="126"/>
+        <image name="Assets/button_bg_inactive_2x2.png" width="147" height="126"/>
+        <image name="Assets/button_bg_inactive_3x2.png" width="189" height="126"/>
+    </resources>
+</document>
