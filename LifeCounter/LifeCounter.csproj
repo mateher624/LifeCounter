@@ -91,7 +91,9 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
-    <None Include="Info.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
     <Compile Include="MainMenuController.cs" />
     <Compile Include="MainMenuController.designer.cs">
       <DependentUpon>MainMenuController.cs</DependentUpon>
@@ -110,6 +112,7 @@
     <BundleResource Include="Resources\Fonts\beleren-bold.ttf" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
+    <InterfaceDefinition Include="Resources\Assets\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Style.cs" />
@@ -148,7 +151,6 @@
     <BundleResource Include="Resources\Assets\Bars\bar_blue.png" />
     <BundleResource Include="Resources\Assets\Bars\bar_pink.png" />
     <BundleResource Include="Resources\Assets\Indicators\indicator_gray.png" />
-    <BundleResource Include="Resources\Assets\Indicators\indicator_white2.png" />
     <BundleResource Include="Resources\Assets\Bars\bar_trans.png" />
     <BundleResource Include="Resources\Assets\2x2\bg_black_2x2.png" />
     <BundleResource Include="Resources\Assets\2x2\bg_blue_2x2.png" />
@@ -200,6 +202,8 @@
     <BundleResource Include="Resources\Assets\button_bg_inactive_2x2.png" />
     <BundleResource Include="Resources\Assets\button_bg_inactive_3x2.png" />
     <BundleResource Include="Resources\Assets\button_bg_inactive_10x2.png" />
+    <BundleResource Include="Resources\Assets\Indicators\indicator_white2.png" />
+    <BundleResource Include="Resources\Assets\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">

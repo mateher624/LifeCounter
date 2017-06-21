@@ -17,7 +17,7 @@ namespace LifeCounter
             ButtonPlayers1.SetBackgroundImage(UIImage.FromBundle("Assets/button_bg_2x2.png"), UIControlState.Normal);
             ButtonPlayers1.SetTitleColor(UIColor.White, UIControlState.Normal);
             Mode.SetPlayersMode(1);
-
+        
             UnsetLifeButtons();
             ButtonLife20.SetBackgroundImage(UIImage.FromBundle("Assets/button_bg_3x2.png"), UIControlState.Normal);
             ButtonLife20.SetTitleColor(UIColor.White, UIControlState.Normal);

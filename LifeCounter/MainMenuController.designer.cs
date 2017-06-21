@@ -54,6 +54,10 @@ namespace LifeCounter
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton ButtonPlayersA { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton StartButton { get; set; }
+
         [Action ("ButtonLife20_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void ButtonLife20_TouchUpInside (UIKit.UIButton sender);
@@ -144,6 +148,11 @@ namespace LifeCounter
             if (ButtonPlayersA != null) {
                 ButtonPlayersA.Dispose ();
                 ButtonPlayersA = null;
+            }
+
+            if (StartButton != null) {
+                StartButton.Dispose ();
+                StartButton = null;
             }
         }
     }
